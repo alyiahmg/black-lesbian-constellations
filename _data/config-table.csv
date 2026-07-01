@@ -1,16 +1,6 @@
 field,display_name
-title,Title
-authorname,Author
-date,First Anthologized
-anthology01,Anthology 1
-anth01editor,Anthology Editor
-anth01year,Year Published
-anth01press,Publishing Press
-anthology02,Anthology 2
-anth02editor,Anthology Editor
-anth02year,Year Published
-anth02press,Publishing Press
-anthology03,Anthology 3
-anth03editor, Anthology Editor
-anth03year,Year Published
-anth03press,Publishing Press
+title,Anthology
+creator,Editor
+date,Published
+publisher,Publisher
+location,Location
