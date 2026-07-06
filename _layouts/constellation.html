@@ -24,11 +24,11 @@ const plot = Plot.plot({
       fy: "Anthology",
       stroke: "title", 
       channels: {creator: "author", title: "title", date: "originally published", parentid: "anthology"},
-      tip: true,
+      tip: true
       sort: {y: "x", fy: "x", reduce: "median", reverse: true},
     }),
   ]
-}).plot
+});
 const div = document.querySelector("#myplot");
 div.append(plot);
 </script>
