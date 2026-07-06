@@ -18,7 +18,7 @@ padding: 6em
 # Look in _includes/feature for options to easily add features to the page
 ---
 
-## About CollectionBuilder CSV
+## About This Project
 
 In her contribution to Black Queer Studies: A Critical Anthology (also the first critical anthology on Black Queer Studies), Black lesbian feminist writer Jewelle Gomez closes her critical essay, “But Some of Us Are Brave Lesbians: The Absence of Black Lesbian Fiction,” with the evergreen reminder: “A syllabus is a terrible thing to waste.” Through this project, I set out to constellate black lesbian writers across page and time as a pedagogical resource for teachers who seek to enliven their courses with the words, lives, dreams, and worlds black lesbian writers offer within and across anthologies. 
 
