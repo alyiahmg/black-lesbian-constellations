@@ -5,7 +5,8 @@ layout: default
 <div id="myplot"></div>
 <script type="module">
 import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm"
-    var data = {{ constellation }}
+var data = {{ constellation | jsonify }};
+
 const plot = Plot.plot({
   height: 800,
   marginRight: 90,
