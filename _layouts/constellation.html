@@ -17,14 +17,14 @@ const plot = Plot.plot({
   color: {type: "categorical"},
   marks: [
     Plot.frame(),
-    Plot.dot(data {
+    Plot.dot(data, {
       x: "startpage",
       y: "parentid",
       fy: "Anthology",
       sort: {y: "x", fy: "x", reduce: "median", reverse: true}
     })
   ]
-})
+});
 const div = document.querySelector("#myplot");
 div.append(plot);
 </script>
