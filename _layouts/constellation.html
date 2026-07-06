@@ -1,0 +1,26 @@
+---
+layout: default
+---
+{%- assign constellation = site.data[site.compoundobjects-metadata] | jsonify -%}
+<script>
+const plot = Plot.plot({
+  height: 800,
+  marginRight: 90,
+  marginLeft: 100,
+  grid: true,
+  x: {nice: true, inset: 0},
+  y: {inset: 5},
+  color: {type: "categorical"},
+  marks: [
+    Plot.frame(),
+    Plot.dot(constellation {
+      x: "startpage",
+      y: "parentid",
+      fy: "Anthology",
+      sort: {y: "x", fy: "x", reduce: "median", reverse: true}
+    })
+  ]
+})
+const div = document.querySelector("#myplot");
+div.append(plot);
+</script>
