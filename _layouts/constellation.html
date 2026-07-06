@@ -24,8 +24,8 @@ const plot = Plot.plot({
       fy: "Anthology",
       stroke: "title", 
       channels: {creator: "author", title: "title", date: "originally published", parentid: "anthology"},
+      tip: true,
       sort: {y: "x", fy: "x", reduce: "median", reverse: true},
-      tip: true
     }),
   ]
 });
