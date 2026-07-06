@@ -1,13 +1,12 @@
 ---
 layout: default
 ---
-{%- assign constellation = site.data[site.constellation-metadata] -%}
+
 <div id="myplot"></div>
 <script type="module">
 import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm"
-var data = {{ constellation | jsonify }};
-
-const plot = Plot.plot({
+constellation = FileAttachment("constellationmetadata.json").json({typed:true})
+const plot = Plot.plot(constellation, {
   height: 800,
   width: 2000,
   marginRight: 90,
@@ -32,7 +31,7 @@ const plot = Plot.plot({
       y: "anthology",
       fy: "Anthology",
       stroke: "title", 
-      channels: {creator: "author", title: "title", date: "originally published", parentid: "anthology"},
+      channels: {creator: "author", title: "title", date: "date", anthology: "anthology"},
       tip: true,
     }),
   ]
