@@ -13,7 +13,7 @@ const plot = Plot.plot({
   marginRight: 90,
   marginLeft: 100,
   grid: false,
-  x: {inset: 25, nice: true},
+  x: {nice: true},
   y: {inset: 5},
   color: {type: "categorical"},
   marks: [
@@ -24,8 +24,8 @@ const plot = Plot.plot({
       fy: "Anthology",
       stroke: "title", 
       channels: {creator: "author", title: "title", date: "originally published", parentid: "anthology"},
-      tip: true
       sort: {y: "x", fy: "x", reduce: "median", reverse: true},
+      tip: true
     }),
   ]
 });
