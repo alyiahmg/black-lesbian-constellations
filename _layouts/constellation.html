@@ -9,11 +9,11 @@ var data = {{ constellation | jsonify }};
 
 const plot = Plot.plot({
   height: 800,
-  width: 1000,
+  width: 2000,
   marginRight: 90,
   marginLeft: 100,
-  grid: true,
-  x: {nice: true, inset: 0},
+  grid: false,
+  x: {nice: true},
   y: {inset: 5},
   color: {type: "categorical"},
   marks: [
@@ -24,8 +24,9 @@ const plot = Plot.plot({
       fy: "Anthology",
       stroke: "title",
       channels: {creator: "author", title: "title", date: "originally published", parentid: "anthology"},
-      sort: {y: "x", fy: "x", reduce: "median", reverse: true}
-    })
+      sort: {y: "x", fy: "x", reduce: "median", reverse: true},
+      tip: true,
+    }),
   ]
 });
 const div = document.querySelector("#myplot");
