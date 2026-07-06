@@ -37,6 +37,7 @@ author: alyiah m gonzales
 metadata: blacklesbianauthor-repository
 table-metadata: anthologycollectionmetadata
 compoundobjects-metadata: anthologyauthorcompoundmetadata 
+constellation-metadata: constellationmetadata
 # page generation settings [optional!]
 # [optional: only used if you need to tweak CB defaults or generate from more than one data file]
 # page_gen:
