@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{%- assign constellation = site.data[site.constellation-metadata] -%}
+{%- assign constellation = site.data[site.compoundobjects-metadata] -%}
 <div id="myplot"></div>
 <script type="module">
 import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm"
@@ -20,12 +20,12 @@ const plot = Plot.plot({
     Plot.frame(),
     Plot.dot(data, {
       x: "startpage",
-      y: "anthology",
+      y: "parentid",
       fy: "Anthology",
-      stroke: "title", 
-      channels: {creator: "author", title: "title", date: "originally published", anthology: "Anthology"},
+      stroke: "title" 
+      channels: {creator: "author", title: "title", date: "originally published", parentid: "anthology"},
       sort: {y: "x", fy: "x", reduce: "median", reverse: true},
-      tip: true
+      tip: true,
     }),
   ]
 });
