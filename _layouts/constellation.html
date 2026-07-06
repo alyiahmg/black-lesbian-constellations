@@ -22,7 +22,7 @@ const plot = Plot.plot({
       x: "startpage",
       y: "parentid",
       fy: "Anthology",
-      stroke: "title",
+      stroke: "title","author",
       channels: {creator: "author", title: "title", date: "originally published", parentid: "anthology"},
       sort: {y: "x", fy: "x", reduce: "median", reverse: true},
       tip: true,
