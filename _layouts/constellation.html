@@ -13,7 +13,15 @@ const plot = Plot.plot({
   marginRight: 90,
   marginLeft: 100,
   grid: false,
-  x: {nice: true},
+  x: {
+    nice: true,
+    grid: false,
+    percent: true,
+    reverse: true,
+    zero: false,
+    inset: 0,
+    domain: [-60, 400]
+},
   y: {inset: 5},
   color: {type: "categorical"},
   marks: [
