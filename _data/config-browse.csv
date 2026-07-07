@@ -6,4 +6,4 @@ subject,,true
 location,,true,,,Location Depicted
 identifier,,,true,Identifier
 genre,Genre,true
-anthology,Anthology,true
+anthology,Anthology,
