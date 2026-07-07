@@ -5,9 +5,9 @@ permalink: /about.html
 # include CollectionBuilder info at bottom
 credits: true
 # featured-image value can be one objectid for a photo object in this collection, a relative path to an image in this project, or a full url to any image. If left blank, no featured image will appear at top of About page.
-about-featured-image: https://commons.wikimedia.org/wiki/File:1980_Democratic_National_Congress.jpg
+about-featured-image: https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/galaxies/irregular/ESO490-017_1_Flat_FINAL_crop.tif
 # set background-position for featured image, "center", "top", "bottom"
-position: top
+position: center
 # major heading to display over featured image
 heading: About the Collection
 # paragraph text below heading in featured image
