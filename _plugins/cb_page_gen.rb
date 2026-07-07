@@ -29,7 +29,7 @@ module CollectionBuilderPageGenerator
       # These values are used if not configured in the 'page_gen' object in _config.yml
       # Defaults follow CollectionBuilder specific conventions.
       #
-      data_file_default = site.config['metadata'] || 'metadata' # _data to use
+      data_file_default = site.config['anthologyauthorcompoundmetadata'] || 'anthologyauthorcompoundmetadata' # _data to use
       template_location_default = "item/" # folder in _layouts used to organize templates, ends with slash, empty if using root
       template_default = 'item' # layout to use for all pages by default
       display_template_default = 'display_template' # metadata column to use to assign layout
