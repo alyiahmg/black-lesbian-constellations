@@ -41,7 +41,7 @@ constellation-metadata: constellationmetadata
 # page generation settings [optional!]
 # [optional: only used if you need to tweak CB defaults or generate from more than one data file]
 # page_gen:
-#   - data: 'demo-metadata'
+#   - data: 'table-metadata'
 #     template: 'item'
 #     name: 'objectid'
 #     dir: 'items'
